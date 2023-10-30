@@ -1,0 +1,20 @@
+# 忽略编译生成的目标文件
+*.o
+
+# 忽略Makefile自动创建的目录
+target/
+
+# 忽略开发工具生成的文件
+.vscode/
+
+# 忽略Makefile自动生成的配置
+Makefile.bak
+
+# 忽略日志文件
+*.log
+
+# 忽略依赖库
+lib/
+
+# 忽略临时文件
+*.tmp
