@@ -21,18 +21,5 @@ public class CPTPARAM extends Structure {
 
     public static class ByValue extends CPTPARAM implements Structure.ByValue {
 
-        public static CPTPARAM.ByValue of(CPTPARAM p) {
-            CPTPARAM.ByValue value = new CPTPARAM.ByValue();
-            System.arraycopy(p.IV, 0, value.IV, 0, p.IV.length);
-            value.IVLen = p.IVLen;
-            value.PaddingType = p.PaddingType;
-            value.FeedBitLen = p.FeedBitLen;
-            return value;
-        }
-
-    }
-
-    public ByValue valueType() {
-        return ByValue.of(this);
     }
 }
